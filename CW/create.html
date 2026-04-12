@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio - Create Your Art</title>
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+    <header><h1>Digital Art Studio</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="create.html" class="active">Create</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="controls">
+            <h3>Choose Your Style:</h3>
+            <button onclick="generateMondrian()">Mondrian Style</button>
+            <button onclick="generateSpots()">Spot Painting</button>
+            <button onclick="clearCanvas()">Clear Canvas</button>
+        </div>
+        
+        <canvas id="sCanvas" width="500" height="500"></canvas>
+    </main>
+
+    <footer><p>&copy; 2026 Digital Art Community</p></footer>
+
+    <script src="js/canvas_logic.js"></script>
+</body>
+</html>

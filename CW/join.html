@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Us - Art Community</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+        .form-container { background: #f9f9f9; padding: 20px; border-radius: 10px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .error-msg { color: red; font-size: 0.9em; display: none; }
+        button { background: #cc7a00; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header><h1>Join Our Community</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="create.html" >Create</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <div class="join-wrapper">
+        <div class="join-info">
+            <h2>Unlock Your Creativity</h2>
+            <p>Join thousands of other artists and developers in exploring the fascinating intersection where strict logic meets limitless creativity.</p>
+            <ul class="benefits-list">
+                <li><strong>Create Unique Art:</strong> Use our Studio powered by exclusive Canvas drawing algorithms.</li>
+                <li><strong>Learn the Code:</strong> Discover how JavaScript can generate geometric masterpieces.</li>
+                <li><strong>Connect & Share:</strong> Publish your generative artworks directly to our community gallery.</li>
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <h3>Register as a Member</h3>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" placeholder="Enter your name">
+                    <span id="nameError" class="error-msg">Please enter your name.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" placeholder="example@gmail.com">
+                    <span id="emailError" class="error-msg">Please enter a valid email.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Primary Interest:</label>
+                    <select id="interest">
+                        <option value="digital">Digital Painting</option>
+                        <option value="code">Generative Art</option>
+                        <option value="design">Graphic Design</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit Membership</button>
+            </form>
+            <div id="successMessage" style="display:none; color: green; margin-top: 20px;">
+                <h4>Welcome aboard! Your registration was successful.</h4>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer><p>&copy; 2026 Digital Art Community</p></footer>
+    <script src="js/form_validation.js"></script>
+</body>
+</html>

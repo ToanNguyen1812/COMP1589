@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Digital Art Community</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+        /* Tối ưu Typography cho trang About */
+        .content-body {
+            column-count: 2; /* Chia 2 cột để lấy điểm layout nâng cao */
+            column-gap: 40px;
+            text-align: justify;
+        }
+        @media (max-width: 768px) { .content-body { column-count: 1; } }
+    </style>
+</head>
+<body>
+    <header><h1>About Our Mission</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+<main>
+    <section class="about-intro">
+        <h2>Our Story</h2>
+        <div class="about-flex">
+            <div class="text-content">
+                <p>The Digital Art Community was founded in 2026 as a student project aimed at bridging the gap between computer science and fine arts. We leverage modern technologies such as the <strong>HTML5 Canvas API</strong> and <strong>JavaScript</strong> to bring static lines of code to life.</p>
+                <p>Our mission is to democratize art creation, making it accessible to everyone regardless of their artistic background. We believe that with the right tools, anyone can create stunning visual art through logic and creativity.</p>
+            </div>
+            <figure class="about-figure">
+                <img src="images/damien.jpg" alt="Portrait of artist Damien Hirst">
+                <figcaption>Damien Hirst - Contemporary artist who inspires our Spot Painting tool.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="inspiration">
+        <h2>Inspiration</h2>
+        <div class="about-flex reverse-layout"> 
+            <div class="text-content">
+                <p>Our platform is built upon the core principles of <em>Accessibility</em> and <em>Open Data</em>. Whether you are a seasoned programmer or a passionate art enthusiast, our tools are designed to be as intuitive and engaging as possible.</p>
+                <p>We draw inspiration from the pioneers of generative art, who have shown that code can be a powerful medium for artistic expression. From the structured grids of Piet Mondrian to the chaotic beauty of Damien Hirst's spot paintings, logic is our brush and the browser is our canvas.</p>
+            </div>
+            <figure class="about-figure artist-card">
+                <img src="images/piet.jpg" alt="Piet Mondrian portrait">
+                <figcaption>Piet Mondrian - Inspiration for our generative art tools.</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+
+    <footer><p>&copy; 2026 Digital Art Community</p></footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "artworks": [
+    {
+      "id": 1,
+      "title": "Colorful Splatters",
+      "artist": "Albert Wesker",
+      "type": "Abstract Art",
+      "description": "A vibrant collection of circular splats with random distribution of beautiful colors.",
+      "image": "images/splatters.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Mondrian Inspired",
+      "artist": "Tomura Shigaraki",
+      "type": "Generative Art",
+      "description": "Inspired by Piet Mondrian's grid art with bold colors and geometric shapes.",
+      "image": "images/mondrian.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Spot Matrix",
+      "artist": "Wu Yifan",
+      "type": "Spot Painting",
+      "description": "A beautiful collection of colorful spots with artistic gradients and watercolor effects.",
+      "image": "images/spot-matrix.jpg"
+    }
+  ]
+}
